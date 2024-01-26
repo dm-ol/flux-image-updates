@@ -1,0 +1,12 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: kbot
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: kbot
+  policy:
+    semver:
+      range: '>=1.х-*'
