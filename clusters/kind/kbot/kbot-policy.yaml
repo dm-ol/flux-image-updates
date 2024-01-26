@@ -9,4 +9,4 @@ spec:
     name: kbot
   policy:
     semver:
-      range: 1.x
+      range: '>=1.0'
