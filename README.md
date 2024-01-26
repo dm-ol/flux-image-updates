@@ -143,10 +143,10 @@ metadata:
   namespace: flux-system
 spec:
   imageRepositoryRef:
-	name: kbot
+    name: kbot
   policy:
     semver:
-	  range: '>=1.0.0'
+      range: '>=1.0.0'
 ```
 При потребі, можна додати фільтри або правила для тегів: https://fluxcd.io/flux/guides/image-update/#imagepolicy-examples
 13. Зафіксуйте та надішліть зміни до головної гілки та зачекайте, поки Flux отримає список тегів зображень із реєстру контейнерів. Потім можна перевірити список доступних тегів:
