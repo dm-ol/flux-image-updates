@@ -2,7 +2,7 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
-  name: flux-system
+  name: kbot
   namespace: flux-system
 spec:
   git:
@@ -16,10 +16,10 @@ spec:
       messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
     push:
       branch: main
-  interval: 10m0s
+  interval: 3m0s
   sourceRef:
     kind: GitRepository
     name: flux-system
   update:
-    path: ./clusters/kind
+    path: ./clusters/kind/kbot
     strategy: Setters
