@@ -7,8 +7,6 @@ metadata:
 spec:
   imageRepositoryRef:
     name: kbot
-  filterTags:
-    pattern: '.*-stage.*'
   policy:
     semver:
-      range: '^1.x-0'
+      range: '>=1.x'
