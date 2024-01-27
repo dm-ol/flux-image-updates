@@ -5,5 +5,5 @@ metadata:
   name: kbot
   namespace: flux-system
 spec:
-  image: docker.io/devdp/cicd-test
+  image: docker.io/devdp/bot_without_monitoring
   interval: 3m0s
