@@ -9,7 +9,8 @@ spec:
     name: kbot
   spec:
   filterTags:
-    pattern: '^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
+    pattern: '(?P<version>.*)-linux-amd64'
+    extract: '$version'
   policy:
     semver:
       range: '>1.0.0'
