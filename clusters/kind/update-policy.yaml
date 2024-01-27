@@ -8,8 +8,8 @@ spec:
   imageRepositoryRef:
     name: kbot
   filterTags:
-    pattern: '(?P<version>.*)-linux-amd64'
-    extract: '$version'
+    pattern: '(?P<ts>.*)-linux-amd64'
+    extract: '$ts'
   policy:
     semver:
-      range: '>1.0.0'
+      range: '>=1.0.0'
