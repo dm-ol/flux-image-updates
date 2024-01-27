@@ -7,7 +7,6 @@ metadata:
 spec:
   imageRepositoryRef:
     name: kbot
-  spec:
   filterTags:
     pattern: '(?P<version>.*)-linux-amd64'
     extract: '$version'
